@@ -1,0 +1,250 @@
+.checkout-page {
+  font-family: var(--font-family);
+  background-color: #f6f7f9;
+  padding: 40px 20px;
+}
+
+.checkout-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.checkout-container h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--theme-color);
+}
+
+.checkout-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.checkout-form,
+.checkout-summary {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.checkout-form h2,
+.checkout-summary h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2e2e2e;
+}
+
+.checkout-form form {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.checkout-form input,
+.checkout-form select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  outline: none;
+}
+
+.checkout-form option {
+  font-weight: 600;
+}
+
+.checkout-form input::placeholder {
+  color: #acacac;
+}
+
+.payment-options label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 320px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.order-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.order-item h4 {
+  font-size: 20px;
+}
+
+.order-item p {
+  font-weight: 600;
+  color: #535353;
+  font-size: 20px;
+}
+
+.order-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.total-section {
+  text-align: right;
+}
+
+.total-section h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #2c2c2c;
+}
+
+.place-order-btn {
+  background-color: var(--theme-color);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: var(--font-family);
+}
+
+.place-order-btn:hover {
+  background-color: #a35cea;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: -6px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 15, 15, 0.75);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  font-family: var(--font-family);
+  animation: popupFade 0.3s ease-in-out;
+}
+
+.popup h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: var(--theme-color);
+}
+
+.popup p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.popup button {
+  background-color: var(--theme-color);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  font-size: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.popup button:hover {
+  background-color: #6d2ecc;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+}
+
+.popup-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--theme-color);
+}
+
+.popup-box p {
+  font-size: 16px;
+  color: #555;
+  font-weight: 600;
+}
+
+.success-icon {
+  font-size: 3rem;
+  color: #00c851;
+  margin-bottom: 15px;
+}
+
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 495px) {
+  .checkout-container {
+    margin-top: 100px;
+  }
+}

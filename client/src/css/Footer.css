@@ -1,0 +1,307 @@
+.Footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    background-color: white;
+	box-shadow: 0 0 40px rgb(206, 205, 205);
+    padding: 3vw 0;
+}
+
+.upper-footer{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.left-upper-footer{
+    width: 30vw;
+    margin: 1vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 5vw;
+}
+
+.left-upper-footer img{
+    width: 50%;
+}
+
+.left-upper-footer p{
+    font-size: 1.4vw;
+    font-weight: 500;
+    line-height: 1.5vw;
+    color: #69707A;
+}
+
+.footer-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.github, .instagram, .facebook{
+    text-decoration: none;
+    font-size: 3vw;
+    margin: 1vw 1vw 1vw 0;
+    color: #69707A !important;
+}
+
+.right-upper-footer{
+    width: 70vw;
+    margin: 1vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.social-links, .quick-links, .company-links, .support-links{
+    width: 20%;
+    margin: 1vw;
+}
+
+.social-links h1, .quick-links h1, .company-links h1, .support-links h1{
+    font-size: 1.6vw;
+    font-weight: 600;
+    margin-bottom: 2vw;
+    /* color: #69707A; */
+    color: black;
+    position: relative;
+}
+
+
+.link-span{
+    display: flex;
+    flex-direction: column;
+}
+.footer-links{
+    text-decoration: none;
+    color: #69707A !important;
+    font-size: 1.3vw;
+    font-weight: 500;
+    margin-top: 1vw;
+}
+
+hr{
+    width: 80vw;
+    text-align: center;
+    color: #69707A;
+    margin: 4vw 0;
+}
+
+.lower-footer p{
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #69707A;
+    margin-bottom: 1vw;
+}
+
+
+
+
+
+@media(min-width: 845px) and (max-width: 945px){
+    .upper-footer{
+        flex-direction: column;
+    }
+    .left-upper-footer{
+        width: 95%;
+    }
+    .left-upper-footer img{
+        width: 25%;
+    }
+    .left-upper-footer p {
+        font-size: 2.5vw;
+    }
+
+    .github, .instagram, .facebook{
+        font-size: 6vw;
+    }
+    .footer-icons {
+        margin-top: 3vw;
+    }
+    .right-upper-footer{
+        flex-direction: column;
+        width: 95%;
+        padding: 0 5vw;
+        margin-top: 4vw;
+    }
+    .social-links h1, .quick-links h1, .company-links h1, .support-links h1 {
+        font-size: 3vw;
+        color: black;
+    }
+    .footer-links{
+        font-size: 2.4vw;
+        margin-bottom: 2vw;
+    }
+    .link-span{
+        margin-bottom: 4vw;
+    }
+    .lower-footer p {
+        font-size: 2vw;
+    }
+
+}
+
+
+
+
+
+
+
+@media(min-width: 645px) and (max-width: 845px){
+    .upper-footer{
+        flex-direction: column;
+    }
+    .left-upper-footer{
+        width: 95%;
+    }
+    .left-upper-footer img{
+        width: 25%;
+    }
+    .left-upper-footer p {
+        font-size: 2.8vw;
+    }
+
+    .github, .instagram, .facebook{
+        font-size: 7vw;
+    }
+    .footer-icons {
+        margin-top: 3vw;
+    }
+    .right-upper-footer{
+        flex-direction: column;
+        width: 95%;
+        padding: 0 5vw;
+        margin-top: 5vw;
+    }
+    .social-links h1, .quick-links h1, .company-links h1, .support-links h1 {
+        font-size: 4vw;
+        color: black;
+    }
+    .footer-links{
+        font-size: 2.5vw;
+        margin-bottom: 2vw;
+    }
+    .link-span{
+        margin-bottom: 6vw;
+    }
+    .lower-footer p {
+        font-size: 2.5vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 495px) and (max-width: 645px){
+    .upper-footer{
+        flex-direction: column;
+    }
+    .left-upper-footer{
+        width: 95%;
+    }
+    .left-upper-footer img{
+        width: 35%;
+    }
+    .left-upper-footer p {
+        font-size: 3.5vw;
+        line-height: 25px;
+    }
+
+    .github, .instagram, .facebook{
+        font-size: 8vw;
+    }
+    .footer-icons {
+        margin-top: 4vw;
+    }
+    .right-upper-footer{
+        flex-direction: column;
+        width: 95%;
+        padding: 0 5vw;
+        margin-top: 6vw;
+    }
+    .social-links h1, .quick-links h1, .company-links h1, .support-links h1 {
+        font-size: 5vw;
+        color: black;
+    }
+    .footer-links{
+        font-size: 3vw;
+        margin-bottom: 3vw;
+    }
+    .link-span{
+        margin-bottom: 7vw;
+    }
+    .lower-footer p {
+        font-size: 2.8vw;
+        margin: 3vw 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 495px){
+    .Footer{
+        margin-top: 10vw;
+    }
+    .upper-footer{
+        flex-direction: column;
+    }
+    .left-upper-footer{
+        width: 95%;
+    }
+    .left-upper-footer img{
+        width: 45%;
+    }
+    .left-upper-footer p {
+        font-size: 4.5vw;
+        line-height: 30px;
+    }
+
+    .github, .instagram, .facebook{
+        font-size:10vw;
+    }
+    .footer-icons {
+        margin-top: 6vw;
+    }
+    .right-upper-footer{
+        flex-direction: column;
+        width: 95%;
+        padding: 0 5vw;
+        margin-top: 8vw;
+    }
+    .social-links h1, .quick-links h1, .company-links h1, .support-links h1 {
+        font-size: 6.5vw;
+        color: black;
+    }
+    .footer-links{
+        font-size: 4.5vw;
+        margin-bottom: 5vw;
+    }
+    .link-span{
+        margin-bottom: 7vw;
+    }
+    .lower-footer p {
+        font-size: 3.5vw;
+        margin: 3vw 0;
+    }
+
+}

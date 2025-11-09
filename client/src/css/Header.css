@@ -1,0 +1,523 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: metro-regular;
+  src: url(../Fonts/Metropolis-Regular.otf);
+}
+
+:root {
+  --theme-color: #8f34e9;
+  --font-family: "Rajdhani", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.upHeader {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  z-index: 999;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 90px;
+  width: 95%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px) !important;
+  box-shadow: 0 0 40px rgb(206, 205, 205);
+  border-radius: 10px;
+}
+
+.logo,
+.carting-system {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  bottom: 5px;
+}
+
+.logo img {
+  width: 35%;
+}
+
+nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+nav a {
+  margin: 0 30px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #707070;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: var(--theme-color);
+  transition: 0.2s;
+}
+
+.active2 {
+  color: var(--theme-color);
+  position: relative;
+  font-weight: 600;
+}
+
+.active2::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: -8px;
+  width: 25px;
+  height: 2px;
+  background-color: var(--theme-color);
+}
+
+.blog {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(63, 63, 63);
+  margin: 15px;
+  font-weight: 500;
+}
+
+.cartBTN {
+  background-color: var(--theme-color);
+  color: white !important;
+  padding: 8px 17px;
+  font-size: 18px !important;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dropdown-click {
+  position: relative;
+  margin: 0 5px;
+  font-size: 18px;
+  color: #707070;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdown {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 230px;
+  background-color: white;
+  color: rgb(48, 48, 48);
+  box-shadow: 0 0 15px rgb(211, 211, 211);
+  border-radius: 5px;
+  flex-direction: column;
+  display: none;
+}
+
+.dropdown-show {
+  display: flex;
+}
+
+.developer-btn {
+  color: rgb(48, 48, 48);
+  font-size: 18px;
+  padding: 15px 30px;
+  margin: 0;
+}
+
+.developer-btn:hover {
+  background-color: whitesmoke;
+}
+
+.menu {
+  display: none;
+}
+
+.hidden-icon {
+  display: none;
+}
+
+@media (min-width: 845px) and (max-width: 945px) {
+  .menu {
+    display: flex;
+    margin: 0 20px 0 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 25px;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .logo img {
+    width: 35%;
+  }
+
+  .carting-system {
+    width: 70%;
+    justify-content: flex-end;
+  }
+
+  nav {
+    position: absolute;
+    top: 20vh;
+    left: -90vw;
+    width: 90vw;
+    height: 12vw;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 25px rgb(179, 179, 179);
+    flex-direction: row;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+    border-radius: 5px;
+  }
+
+  nav.menu-active {
+    left: 5vw;
+    opacity: 1;
+    transition: opacity 0.7s ease, visibility 0s 0s;
+  }
+
+  .clicked {
+    margin: 80px 40px;
+    font-size: 2.2vw;
+  }
+
+  .hidden-icon {
+    display: inline-flex;
+  }
+
+  .dropdown-click {
+    font-size: 2.2vw;
+    margin: 0 40px;
+  }
+
+  .active2 {
+    /* margin: 0 25px; */
+    margin: 80px 40px;
+  }
+
+  .active2::after {
+    width: 45px;
+  }
+
+  .dropdown {
+    margin-top: 2vw;
+    box-shadow: 0 0 10px rgb(134, 134, 134);
+  }
+
+  .developer-btn {
+    font-size: 1.9vw;
+  }
+}
+
+/* ============================================================================= */
+
+@media (min-width: 645px) and (max-width: 845px) {
+  .menu {
+    display: flex;
+    margin: 0 20px 0 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 25px;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .logo p {
+    display: none;
+  }
+
+  .logo img {
+    width: 65%;
+  }
+
+  .carting-system {
+    width: 80%;
+    justify-content: flex-end;
+  }
+
+  nav {
+    position: absolute;
+    top: 20vh;
+    left: -90vw;
+    width: 90vw;
+    height: 12vw;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 25px rgb(179, 179, 179);
+    flex-direction: row;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+    border-radius: 5px;
+  }
+
+  nav a {
+    margin: auto;
+  }
+
+  nav.menu-active {
+    left: 5vw;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.7s ease, visibility 0s 0s;
+  }
+
+  .clicked {
+    font-size: 2.6vw;
+  }
+
+  .hidden-icon {
+    display: inline-flex;
+  }
+
+  .dropdown-click {
+    font-size: 2.6vw;
+    margin: 0 35px;
+  }
+
+  .active2 {
+    margin: 80px 30px;
+  }
+
+  .active2::after {
+    width: 45px;
+  }
+
+  .dropdown {
+    width: 30vw;
+    left: -4vw;
+  }
+
+  .developer-btn {
+    padding: 2vw 3vw;
+    font-size: 2.5vw;
+  }
+}
+
+/* ============================================================================= */
+
+@media (min-width: 495px) and (max-width: 645px) {
+  header {
+    height: 80px;
+  }
+  .menu {
+    display: flex;
+    margin: 0 20px 0 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 25px;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .logo p {
+    display: none;
+  }
+
+  .logo img {
+    width: 85%;
+  }
+
+  .carting-system {
+    width: 80%;
+    justify-content: flex-end;
+  }
+
+  nav {
+    position: absolute;
+    top: 20vh;
+    left: -90vw;
+    width: 90vw;
+    height: 12vw;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 25px rgb(179, 179, 179);
+    flex-direction: row;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+    border-radius: 5px;
+  }
+
+  nav a {
+    margin: auto;
+  }
+
+  nav.menu-active {
+    left: 5vh;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.7s ease, visibility 0s 0s;
+  }
+
+  .clicked {
+    font-size: 2.8vw;
+  }
+
+  .hidden-icon {
+    display: inline-flex;
+  }
+
+  .dropdown-click {
+    font-size: 2.8vw;
+    margin: 0 20px;
+  }
+
+  .active2 {
+    margin: 0 20px;
+  }
+
+  .active2::after {
+    width: 45px;
+  }
+
+  .dropdown {
+    width: 33vw;
+    left: -7vw;
+  }
+
+  .developer-btn {
+    padding: 2.5vw 3vw;
+    font-size: 2.8vw;
+  }
+}
+
+/* ============================================================================= */
+
+@media (max-width: 495px) {
+  header {
+    height: 70px;
+  }
+
+  .cartBTN {
+    padding: 5px 18px;
+  }
+
+  .menu {
+    display: flex;
+    margin: 0 20px 0 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 25px;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .logo p {
+    display: none;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  .carting-system {
+    width: 80%;
+    justify-content: flex-end;
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: white;
+    box-shadow: 0 0 25px rgb(155, 155, 155);
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+    border-radius: 5px;
+    padding: 10vw 0 0 0;
+  }
+
+  nav.menu-active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.7s ease, visibility 0s 0s;
+  }
+
+  .clicked {
+    margin: 30px 20px;
+    font-size: 4vw;
+    color: black;
+  }
+
+  .hidden-icon {
+    display: inline-flex;
+  }
+
+  .dropdown-click {
+    font-size: 4.5vw;
+    margin: 30px 20px;
+    color: black;
+  }
+
+  .active2 {
+    margin: 30px 20px;
+    color: var(--theme-color);
+  }
+
+  .active2::after {
+    width: 30px;
+  }
+
+  .dropdown {
+    width: 50vw;
+  }
+
+  .developer-btn {
+    padding: 4vw 5vw;
+    font-size: 4vw;
+  }
+}

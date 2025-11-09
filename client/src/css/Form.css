@@ -1,0 +1,291 @@
+.FormPlus {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 94vw;
+    margin: 5vw 0;
+}
+
+.sideFormSection {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 1vw;
+    background-color: white;
+    box-shadow: 0 0 20px rgb(187, 187, 187);
+    padding: 2vw;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    align-self: stretch;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 2vw;
+    box-shadow: 0 0 20px rgb(187, 187, 187);
+}
+
+.Formheading {
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+    flex-direction: column;
+    margin: 3vw;
+}
+
+.Formheading h1 {
+    font-size: 3vw;
+    color: rgb(49, 49, 49);
+    font-family: metro-bold;
+    margin-bottom: 2vw;
+    font-family: var(--font-family);
+}
+
+.Formheading h1 span {
+    color: var(--theme-color);
+}
+
+.Formheading p {
+    font-size: 1.6vw;
+    line-height: 35px;
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+
+.ActualForm {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #F2F6FC;
+    padding: 4vw 2vw;
+    border-radius: 10px;
+    margin-bottom: 3vw;
+}
+
+.Formname {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Formname input {
+    font-size: 1.3vw;
+    font-family: var(--font-family);
+    padding: 1.3vw 2vw;
+    margin: 1vw;
+    outline: none;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 10px;
+    color: rgb(87, 87, 87);
+    width: -webkit-fill-available;
+}
+
+.ActualForm input,
+.select,
+textarea {
+    font-size: 1.6vw;
+    font-family: var(--font-family);
+    font-weight: 500;
+    padding: 1.3vw 2vw;
+    margin: 1vw;
+    outline: none;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 10px;
+    color: rgb(56, 56, 56);
+    align-self: stretch;
+    background-color: white;
+}
+
+.options {
+    padding: 2vw;
+    font-size: 1.6vw;
+    font-weight: 500;
+}
+
+.ActualForm textarea {
+    line-height: 25px;
+    height: 150px;
+}
+
+.ActualForm button {
+    font-size: 1.6vw;
+    font-family: var(--font-family);
+    font-weight: 500;
+    padding: 1.3vw 2vw;
+    margin: 1vw;
+    outline: none;
+    border: 1px solid var(--theme-color);
+    border-radius: 10px;
+    color: white;
+    width: -webkit-fill-available;
+    background-color: var(--theme-color);
+}
+
+.ActualForm button:hover {
+    background-color: brown;
+    border: 1px solid brown;
+}
+
+.ActualForm input:focus {
+    border: 1px solid var(--theme-color);
+}
+
+.ActualForm textarea:focus {
+    border: 1px solid var(--theme-color);
+}
+
+
+
+@media (min-width: 845px) and (max-width: 945px) {
+
+    .Form {
+        width: 97%;
+        margin: auto;
+        padding: 6vw 2vw;
+    }
+
+    .Formheading h1 {
+        font-size: 5vw;
+    }
+
+    .Formheading p {
+        font-size: 2.5vw;
+        line-height: 35px;
+    }
+
+    .ActualForm input,
+    .select,
+    textarea,
+    .options,
+    .ActualForm button {
+        font-size: 2.6vw;
+        padding: 1.5vw 2vw;
+        margin: 2vw 1vw;
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 645px) and (max-width: 845px) {
+
+    .Form {
+        width: 97%;
+        margin: auto;
+        padding: 6vw 2vw;
+    }
+
+    .Formheading h1 {
+        font-size: 5vw;
+    }
+
+    .Formheading p {
+        font-size: 2.8vw;
+        line-height: 35px;
+    }
+
+    .ActualForm input,
+    .select,
+    textarea,
+    .options,
+    .ActualForm button {
+        font-size: 2.6vw;
+        padding: 1.5vw 2vw;
+        margin: 2vw 1vw;
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 495px) and (max-width: 645px) {
+
+    .Form {
+        width: 97%;
+        margin: auto;
+        padding: 6vw 2vw;
+    }
+
+    .Formheading h1 {
+        font-size: 6vw;
+    }
+
+    .Formheading p {
+        font-size: 3.2vw;
+        line-height: 32px;
+    }
+
+    .Formname {
+        flex-direction: column;
+    }
+
+    .ActualForm input,
+    .select,
+    textarea,
+    .options,
+    .ActualForm button {
+        font-size: 3.5vw;
+        padding: 1.8vw 2.5vw;
+        margin: 2vw 1vw;
+        border-radius: 7px;
+    }
+}
+
+
+
+
+@media (max-width: 495px) {
+
+    .Form {
+        width: 97%;
+        margin: auto;
+        padding: 6vw 2vw;
+        box-shadow: 0 0 10px rgb(222, 222, 222);
+    }
+
+    .Formheading h1 {
+        font-size: 7vw;
+        margin: 4vw auto;
+    }
+
+    .Formheading p {
+        font-size: 3.5vw;
+        line-height: 27px;
+        margin: 3vw 0;
+        display: none;
+    }
+
+    .Formname {
+        flex-direction: column;
+    }
+
+    .ActualForm input,
+    .select,
+    textarea,
+    .options,
+    .ActualForm button {
+        font-size: 5vw;
+        padding: 3vw 4vw;
+        margin: 3vw 2vw;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,78 @@
+.store-page {
+  font-family: "Rajdhani", sans-serif;
+  background-color: #f8f9fb;
+  padding: 20px 0;
+}
+
+.productHeader {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 180px;
+}
+
+.productHeader h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.productHeader h1 span {
+  color: #8f34e9;
+}
+
+.productHeader p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 8px;
+}
+
+.filter-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px auto 40px;
+  flex-wrap: wrap;
+}
+
+.filter-controls select {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 6px;
+  outline: none;
+  background-color: white;
+  transition: 0.3s ease;
+  font-family: var(--font-family);
+}
+
+.filter-controls option {
+  font-weight: 600;
+}
+
+.filter-controls select:focus {
+  border-color: #8f34e9;
+  box-shadow: 0 0 0 2px rgba(143, 52, 233, 0.2);
+}
+
+.allProductshere {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 495px) {
+  .productHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .productHeader p {
+    width: 80%;
+  }
+}

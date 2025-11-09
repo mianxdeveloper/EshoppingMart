@@ -1,0 +1,156 @@
+.Card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25vw;
+    overflow: hidden;
+    height: 50vh;
+    max-height: 30vw;
+    border-radius: 5px;
+    position: relative;
+    margin: 2vw;
+}
+
+.Card img{
+    width: 220%;
+}
+
+.overly{
+    position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	/* Dark overlay with opacity */
+	pointer-events: none;
+}
+
+.card-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+}
+
+.card-content h1{
+   color: white;
+   font-size: 1.7vw;
+}
+
+.learnMore{
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin: 1vw;
+    text-decoration: none;
+    color: white;
+    padding: 1vw 3vw;
+    background-color: var(--theme-color);
+    border-radius: 5px;
+}
+
+.level{
+    position: absolute;
+    color: white;
+    top: 1.5vw;
+    left: 2vw;
+    border-radius: 30px;
+    padding: 3px 20px;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+.star{
+    position: absolute;
+    color: white;
+    top: 1.5vw;
+    right: 2vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+.starIcon{
+    color: rgb(219, 188, 8);
+}
+
+
+
+@media (min-width: 845px) and (max-width: 945px){
+    .Card{
+        width: 40%;
+        height: 60vh;
+        max-height: 60vh;
+    }
+    .card-content h1{
+        font-size: 2.8vw;
+    }
+    .learnMore{
+        font-size: 2vw;
+        font-weight: 600;
+        padding: 1.5vw 4vw;
+    }
+}
+
+
+
+
+
+@media (min-width: 645px) and (max-width: 845px){
+    .Card{
+        width: 45%;
+        height: 50vh;
+        max-height: 50vh;
+    }
+    .card-content h1{
+        font-size: 3vw;
+    }
+    .learnMore{
+        font-size: 2.2vw;
+        font-weight: 600;
+        padding: 1.5vw 4vw;
+    }
+}
+
+
+
+
+@media (min-width: 495px) and (max-width: 645px){
+    .Card{
+        width: 90%;
+        height: 45vh;
+        max-height: 45vh;
+    }
+    .card-content h1{
+        font-size: 4.5vw;
+    }
+    .learnMore{
+        font-size: 3vw;
+        font-weight: 600;
+        padding: 2vw 5vw;
+    }
+}
+
+
+
+
+
+
+
+@media  (max-width: 495px){
+    .Card{
+        width: 90%;
+        height: 50vh;
+        max-height: 50vh;
+        margin-bottom: 5vw;
+    }
+    .card-content h1{
+        font-size: 6vw;
+    }
+    .learnMore{
+        font-size: 4vw;
+        font-weight: 600;
+        padding: 2.5vw 7vw;
+    }
+}
